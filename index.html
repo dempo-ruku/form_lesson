@@ -10,6 +10,133 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <section class="content">
+      <div class="inner">
+        <div class="content__main">
+          <h1>アカウント作成</h1>
+          <div class="sns">
+            <div class="flex">
+              <div class="sns__flex">
+                <a href="" class="sns__flex__text facebook">Facebookでスタート</a>
+              </div>
+              <div class="sns__flex">
+                <a href="" class="sns__flex__text google">Googleでスタート</a>
+              </div>
+            </div>
+          </div>
+          <p class="timeline moji">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          <div class="acount moji">
+            <p>アカウント情報</p>
+          </div>
+          <form action="">
+            <div class="name">
+              <div class="name__box">
+                <dt>名字<span class="kome">※</span></dt>
+                <dd>
+                  <input type="text" name="myouji" class="input-area moji">
+                </dd>
+              </div>
+              <div class="name__box">
+                <dt>名前<span class="kome">※</span></dt>
+                <dd>
+                  <input type="text" name="namae" class="input-area moji">
+                </dd>
+              </div>
+            </div>
+            <div class="gender">
+              <dt>性別</dt>
+              <dd>
+                <ul>
+                  <li>
+                    <input type="radio" name="gender-type" id="man">
+                    <label for="man">男性</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="gender-type" id="woman">
+                    <label for="woman">女性</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="gender-type" id="other">
+                    <label for="other">その他</label>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div class="from ue">
+              <dt>出身</dt>
+              <dd>
+                <select name="from__box" class="input-area moji">
+                  <option value="tokyo">東京</option>
+                  <option value="tiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
+                </select>
+              </dd>
+            </div>
+            <div class="email ue">
+              <dt>Eメール<span class="kome">※</span></dt>
+              <dd>
+                <input type="email" name="email" class="input-area moji" placeholder="ex ) hoge@example.com">
+              </dd>
+            </div>
+            <div class="number ue">
+              <dt>電話番号</dt>
+              <dd>
+                <input type="tel" name="tel" class="input-area moji" placeholder="ex ) 09012345678">
+              </dd>
+            </div>
+            <div class="pas ue">
+              <dt>パスワード<span class="kome">※</span></dt>
+              <dd>
+                <input type="password" name="pass" class="input-area moji">
+              </dd>
+            </div>
+            <div class="pas ue">
+              <dt>パスワード（確認用）</dt>
+              <dd>
+                <input type="password" name="pass" class="input-area moji">
+              </dd>
+            </div>
+            <div class="hope ue">
+              <dt>希望コース</dt>
+              <dd>
+                <ul>
+                  <li class="hope__app">
+                    <input type="checkbox" name="program" value="フロントエンド" id="flont">
+                    <label for="flont" class="hope__label">フロントエンド</label>
+                  </li>
+                  <li class="hope__app">
+                    <input type="checkbox" name="program" value="バックエンド" id="back">
+                    <label for="back" class="hope__label">バックエンド</label>
+                  </li>
+                  <li class="hope__app">
+                    <input type="checkbox" name="program" value="アプリ" id="app">
+                    <label for="app" class="hope__label">アプリ</label>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div class="remarks ue">
+              <dt>備考</dt>
+              <dd>
+                <textarea name="bikou" rows="5" cols="40" placeholder="何かあればご記入ください"></textarea>
+              </dd>
+            </div>
+            <div class="create ue">
+              <a href="">
+                <button type="button" name="button" class="create__button">アカウント作成</button>
+              </a>
+            </div>
+            <p class="agree ue">
+              アカウントを作成することにより、<a href="">利用規約</a>と<a href="">プライバシーポリシー</a>に同意するものとしま<br>す。
+            </p>
+          </form>
+        </div>
+        <div class="content__footer">
+          <p>すでにアカウントをお持ちですか？<a href="">ログイン</a></p>
+          <p><a href="">認証メールは届きませんか？</a></p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
