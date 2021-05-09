@@ -142,16 +142,47 @@ h1 {
 }
 
 .gender li {
-  display: inline;
-  padding: 3px 3px 3px 20px;
-}
-
-.gender input[type="radio"] {
-  margin: 4px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .gender li:first-child {
-  padding-left: 0;
+  margin-left: 0;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"] + .gender__label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+
+input[type="radio"] + .gender__label:before {
+  width: 15px;
+  height: 15px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+input[type="radio"] + .gender__label:after {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  background: #01bfbd;
+  transform: translate(0,-50%);
+  opacity: 0;
+}
+
+input[type="radio"]:checked + .gender__label:after {
+  opacity: 1;
 }
 
 .ue {
@@ -186,17 +217,19 @@ h1 {
   font-size: 16px;
 }
 
-.hope input[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
-.hope input[type="checkbox"] + .hope__label {
+input[type="checkbox"] + .hope__label {
   padding-left: 25px;
   position: relative;
 }
 
 input[type="checkbox"] + .hope__label:before,
-input[type="checkbox"] + .hope__label:after {
+input[type="checkbox"] + .hope__label:after,
+input[type="radio"] + .gender__label:before,
+input[type="radio"] + .gender__label:after {
   content: '';
   display: block;
   position: absolute;
