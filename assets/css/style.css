@@ -12,7 +12,13 @@
   height: 36px;
   padding: 5px;
   margin-top: 10px;
-  outline-color: #dff;
+}
+
+.input-area:focus {
+  background: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+  outline: none;
 }
 
 li {
@@ -47,10 +53,11 @@ dt {
 }
 
 .content__main {
+  margin-bottom: 32px;
+  padding: 48px 64px;
   background-color: #fff;
-  padding: 50px;
-  border-radius: 3px;
-  border: 3px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
 }
 
 h1 {
@@ -264,10 +271,10 @@ input[type="checkbox"]:checked + .hope__label:after {
 
 .create a :hover {
   cursor: pointer;
-  background-color: #01a6a4;
 }
 
 .create__button {
+  transition: 0.3s;
   background-color: #01bfbd;
   color: #fff;
   text-align: center;
@@ -275,6 +282,12 @@ input[type="checkbox"]:checked + .hope__label:after {
   padding: 13px;
   border-radius: 3px;
   border: 1px solid #01bfbd;
+}
+
+.create__button:active {
+  background-color: #fff;
+  color: #01bfbd;
+  border: 1px solid #d9d9d9;
 }
 
 .agree {
@@ -302,5 +315,7 @@ input[type="checkbox"]:checked + .hope__label:after {
 }
 
 .bbb:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
 }
+
