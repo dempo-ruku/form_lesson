@@ -25,7 +25,7 @@ li {
   list-style: none;
 }
 
-.moji {
+.letter {
   color: #949697;
   font-size: 12px;
 }
@@ -41,7 +41,7 @@ dt {
   width: 100%;
 }
 
-.kome {
+.mark {
   margin-left: 3px;
   font-size: 8px;
   color: #f00;
@@ -116,13 +116,13 @@ h1 {
   text-align: center;
 }
 
-.acount {
+.account {
   margin: 20px 0;
   display: flex;
   align-items: center;
 }
 
-.acount:before,.acount:after {
+.account:before,.account:after {
   border-top: 1px solid #949697;
   content: "";
   flex-grow: 1;
@@ -192,7 +192,7 @@ input[type="radio"]:checked + .gender__label:after {
   opacity: 1;
 }
 
-.ue {
+.top {
   margin-top: 20px;
 }
 
@@ -306,16 +306,15 @@ input[type="checkbox"]:checked + .hope__label:after {
   font-size: 12px;
 }
 
-.aaa {
+.button__color {
   color: #01a6a4;
 }
 
-.aaa:hover {
+.button__color:hover {
   color: #01bfbd;
 }
 
-.bbb:hover {
+.underline:hover {
   border-bottom: 1px solid #ececec;
   border-bottom-color: #01bfbd;
 }
-
