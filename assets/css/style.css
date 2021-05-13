@@ -260,13 +260,20 @@ input[type="checkbox"]:checked + .hope__label:after {
 }
 
 .remarks textarea {
-  outline-color: #dff;
   margin-top: 5px;
   width: 100%;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
   padding: 5px;
+  resize: none;
+}
+
+.remarks textarea:focus {
+  background: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+  outline: none;
 }
 
 .create a :hover {
@@ -282,6 +289,10 @@ input[type="checkbox"]:checked + .hope__label:after {
   padding: 13px;
   border-radius: 3px;
   border: 1px solid #01bfbd;
+}
+
+.create__button:hover {
+  background-color: #01a6a4;
 }
 
 .create__button:active {
